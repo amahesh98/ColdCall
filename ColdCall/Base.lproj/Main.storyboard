@@ -28,7 +28,7 @@
                                 <rect key="frame" x="104.5" y="518" width="166" height="56"/>
                                 <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="5" maxX="20" maxY="5"/>
                                 <state key="normal" title="Cold Call">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -36,6 +36,12 @@
                                     <action selector="coldCallAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V9P-DQ-BtT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho2-Sd-eyH">
+                                <rect key="frame" x="138" y="206" width="98" height="168"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="140"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -43,13 +49,17 @@
                             <constraint firstItem="IOi-1k-oaH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7QQ-98-Tvo"/>
                             <constraint firstItem="y9K-If-lhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A0Q-1x-BMY"/>
                             <constraint firstItem="y9K-If-lhj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="D2H-Ka-Vma"/>
+                            <constraint firstItem="Ho2-Sd-eyH" firstAttribute="top" secondItem="y9K-If-lhj" secondAttribute="bottom" constant="100" id="Djs-d6-JkW"/>
+                            <constraint firstItem="Ho2-Sd-eyH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hjh-MG-zvN"/>
                             <constraint firstItem="y9K-If-lhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dfb-NS-63T"/>
+                            <constraint firstItem="IOi-1k-oaH" firstAttribute="top" secondItem="Ho2-Sd-eyH" secondAttribute="bottom" constant="144" id="gju-Rh-Ltt"/>
                             <constraint firstItem="y9K-If-lhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r40-Sv-gdE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IOi-1k-oaH" secondAttribute="bottom" constant="93" id="wek-Hi-ed5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="numberArea" destination="Ho2-Sd-eyH" id="o3I-uZ-BFB"/>
                         <outlet property="spaceForName" destination="y9K-If-lhj" id="JDc-4o-CLF"/>
                     </connections>
                 </viewController>
